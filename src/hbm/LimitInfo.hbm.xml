@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-3-11 15:25:23 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="cn.ly.srms.entity.LimitInfo" table="limit_info" catalog="classbook">
+        <id name="limitId" type="string">
+            <column name="LIMIT_ID" length="20" />
+            <generator class="assigned" />
+        </id>
+        <property name="limitName" type="string">
+            <column name="LIMIT_NAME" length="60" not-null="true" />
+        </property>
+        <property name="limitRemark" type="string">
+            <column name="LIMIT_REMARK" />
+        </property>
+        <property name="limitLevel" type="string">
+            <column name="LIMIT_LEVEL" length="1" not-null="true" />
+        </property>
+        <property name="limitParent" type="string">
+            <column name="LIMIT_PARENT" length="8" />
+        </property>
+        <property name="limitUrl" type="string">
+            <column name="LIMIT_URL" />
+        </property>
+        <property name="limitIcon" type="string">
+            <column name="LIMIT_ICON" />
+        </property>
+        <property name="limitState" type="string">
+            <column name="LIMIT_STATE" length="1" not-null="true" />
+        </property>
+        <property name="menuFlag" type="string">
+            <column name="MENU_FLAG" length="1" not-null="true" />
+        </property>
+        <property name="limitType" type="string">
+            <column name="LIMIT_TYPE" length="1" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

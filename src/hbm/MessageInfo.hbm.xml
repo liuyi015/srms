@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-3-23 15:07:31 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="cn.ly.srms.entity.MessageInfo" table="messageInfo" catalog="classbook">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="sendId" type="int">
+            <column name="sendId" not-null="true" />
+        </property>
+        <property name="receiveId" type="int">
+            <column name="receiveId" not-null="true" />
+        </property>
+        <property name="title" type="string">
+            <column name="title" length="80" />
+        </property>
+        <property name="message" type="string">
+            <column name="message" />
+        </property>
+        <property name="sendTime" type="string">
+            <column name="sendTime" length="19" not-null="true" />
+        </property>
+        <property name="status" type="string">
+            <column name="status" length="2" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

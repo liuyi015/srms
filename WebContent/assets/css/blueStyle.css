@@ -1,0 +1,562 @@
+body {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	overflow:auto;
+	color: #333;
+	background-color: #FFFFFF;
+	SCROLLBAR-FACE-COLOR: #e8e7e7;
+	SCROLLBAR-HIGHLIGHT-COLOR: #ffffff;
+	SCROLLBAR-SHADOW-COLOR: #ffffff;
+	SCROLLBAR-3DLIGHT-COLOR: #cccccc;
+	SCROLLBAR-ARROW-COLOR: #375d93;
+	SCROLLBAR-TRACK-COLOR: #EFEFEF;
+	SCROLLBAR-DARKSHADOW-COLOR: #b2b2b2;
+	SCROLLBAR-BASE-COLOR: #000000;
+}
+
+span {
+	font-size: 12px;
+}
+
+input {
+	font-size: 12px;
+}
+
+button {
+	font-size: 12px;
+	width: 50px;
+}
+
+select {
+	font-size: 12px;
+	line-height: 20px;
+	padding: 6px;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+}
+
+textarea {
+	font-size: 12px;
+}
+
+hr {
+	/*color: #ddd;*/
+	border: 0;
+	border-bottom: 1px solid #ddd;
+	margin: 10px 0;
+	
+}
+
+a:link {
+	color: #666666;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #666666;
+	text-decoration: none;
+}
+
+a:active {
+	color: #1b528f;
+	text-decoration: none;
+}
+fieldset{
+	border: 0;
+	background: #fff;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	
+}
+fieldset legend{
+	display: none;
+}
+table {
+	background: none;
+}
+table.pagebgcolor {
+	background: none;
+}
+table ,table td{
+	border-color:#ddd;
+}
+.inputTextStyle {
+	line-height: 15px;
+	padding: 5px;
+	border-radius: 3px;
+	border: 1px solid #ddd;
+	/* text-align: right; */
+}
+
+
+.pageTitle {
+	font-family: 'Trebuchet MS', Helvetica, sans-serif;
+	color: #14468f;
+	font-size: 26px;
+	font-weight: bold;
+	letter-spacing: 10px;
+	text-align: center;
+}
+
+.pageTitle2 {
+	font-size: 18px;
+	font-weight: bold;
+	letter-spacing: 10px;
+}
+
+.pageTitle3 {
+	font-family: 'Trebuchet MS', Helvetica, sans-serif;
+	color: #173d72;
+	font-size: 13px;
+	font-weight: bold;
+	letter-spacing: 10px;
+	text-align: center;
+}
+
+.pageTitleX {
+	font-family: 'Trebuchet MS', Helvetica, sans-serif;
+	color: #173d72;
+	font-size: 13px;
+	font-weight: bold; 
+	text-align: center;
+}
+
+/*锟斤拷锟斤拷8锟斤拷锟斤拷式**/
+.operateTable {
+	background-color: #F5F4FF;
+}
+
+/*锟斤拷锟斤拷8锟�锟斤拷锟斤拷式*/
+.operateTR {
+	
+	background-color: #fff;
+}
+.operateTR td{
+	padding: 5px 0;
+}
+/*锟斤拷锟斤拷8锟�锟斤拷锟斤拷锟斤拷式*/
+.operateTitle {
+	text-align: right;
+	vertical-align: middle;
+}
+
+/*锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟绞�/
+.operateContent {
+	font-size: 12px;
+	text-align: left;
+	vertical-align: middle;
+	white-space: nowrap;
+}
+
+/*锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟绞�*/
+.operateContent2 {
+	font-size: 12px;
+	text-align: left;
+	vertical-align: middle;
+}
+
+/*锟叫憋拷头锟斤拷式*/
+.listHead {
+	
+	font-size: 12px;
+
+	background-position: center center;
+	text-align: center;
+	vertical-align: middle;
+	height: 40px;
+	border-bottom: 2px solid #3c8dbc;
+}
+
+/*锟叫�锟斤拷色**/
+.listcolor1 {
+	BACKGROUND-COLOR: #f9f9f9;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	background-position: center center;
+	text-align: center;
+	vertical-align: middle;
+	height: 40px;
+}
+
+.listcolorhightlight1 {
+	BACKGROUND-COLOR: #f5f5f5;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	background-position: center center;
+	text-align: center;
+	vertical-align: middle;
+	height: 40px;
+}
+
+.listcolor2 {
+	BACKGROUND-COLOR: #FFFFFF;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	background-position: center center;
+	text-align: center;
+	vertical-align: middle;
+	height: 40px;
+}
+
+.listcolorhightlight2 {
+	BACKGROUND-COLOR: #f5f5f5;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	background-position: center center;
+	text-align: center;
+	vertical-align: middle;
+	height: 40px;
+}
+
+/*统锟斤拷锟斤拷锟斤拷锟绞�*/
+.accountContent {
+	font-size: 12px;
+	font-weight: bold;
+	vertical-align: middle;
+}
+
+/*锟斤拷页锟斤拷式**/
+.pagination {
+	font-size: 12px;
+}
+
+/*锟剿碉拷锟斤拷锟斤拷锟斤拷式**/
+.treebgcolor {
+	background-color: #f7f6fb;
+}
+
+/*一锟斤拷锟斤拷锟斤拷锟斤拷式*/
+.standardConetent {
+	font-size: 12px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+/*锟斤拷锟斤拷页锟斤拷锟斤拷式*/
+.loading {
+	height: 100%;
+	width: 100%;
+	font-size: 14px;
+	font-weight: bold;
+	background-color: #F5F4FF;
+}
+
+/*锟斤拷钮锟斤拷式1*/
+.buttonStyle1 {
+	background: url(../images/pic/botton1_1.gif);
+	background-color: #3c8dbc;
+	color: white;
+	border:0;
+	border-radius: 3px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	cursor: pointer;
+}
+
+/*锟斤拷钮锟斤拷式2*/
+.buttonStyle2 {
+	background: url(../images/pic/botton2_1.gif);
+	background-color: #3c8dbc;
+	color: white;
+	border:0;
+	border-radius: 3px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.note {
+	color: #bc0404;
+}
+
+.mouse {
+	cursor: pointer;
+}
+
+.loaderStyle {
+	width: 180px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-color: #ffffe1;
+	border-color: #cccccc;
+	border-style: solid;
+	border-width: 1px;
+}
+
+.loaderStyle_en {
+	width: 80px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-color: #ffffe1;
+	border-color: #cccccc;
+	border-style: solid;
+	border-width: 1px;
+}
+
+.updateProgressModalBackground {
+	background-color: #000;
+	filter: alpha(opacity =5);
+	-moz-opacity: 0.75;
+	opacity: 0.75;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	display: none;
+	z-index: 3100;
+	height: 100%;
+	width: 100%;
+}
+
+.updateProgressDialog {
+	z-index: 3101;
+	position: absolute;
+	display: none;
+}
+
+.ajaxloader {
+	border: thin #375d93 solid;
+	background-color: White;
+	height: 60px;
+	width: 200px;
+}
+
+.ajaxPagerStyle {
+	text-decoration: none;
+	cursor: pointer;
+	color: #666666;
+}
+
+.ajaxPagerHightLightStyle {
+	text-decoration: none;
+	cursor: pointer;
+	color: #666666;
+	background-color: #E9EBFC;
+}
+
+.hrline {
+	
+}
+
+.listStyle {
+	border-collapse: collapse;
+}
+
+.search_adv_button1 {
+	color: Blue;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.search_adv_button2 {
+	color: #f40706;
+	cursor: pointer;
+	font-weight: bold;
+}
+.listItemTitle0 {
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	
+	cursor: default;
+}
+.listItemTitle1 {
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	background-color: #fff;
+	cursor: pointer;
+}
+
+.listItemTitle1_1 {
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	background-color: #fff;
+	cursor: default;
+	border-bottom: 2px;
+}
+
+.listItemTitle2 {
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	background-color: #cde3f6;
+	cursor: pointer;
+}
+
+#pxImg {
+	text-align: center;
+	vertical-align: middle;
+}
+
+.title {
+	padding-right: 5px;
+}
+
+.invNoStyle {
+	letter-spacing: 2;
+}
+
+.index_style {
+	width: 1002 px;
+	height: 603 px;
+	background-image: url('../images/pic/index.png');
+	background-position: center;
+	border: 0;
+}
+
+.index_table {  
+	position: absolute;
+	z-index: auto;
+	left: expression(body.clientWidth/2-220);
+	top: 180px;
+}
+.index_page{
+	margin: 0; 
+	overflow: hidden; 
+	background-color: #2E8B57;
+}
+
+.op{
+	display: inline-block;
+	line-height: 30px;
+	padding: 0 15px;
+	color:#fff;
+	cursor: pointer; 
+	background: #3c8dbc;
+	border-radius: 3px;
+} 
+
+.btn_2k3,.btn2k3 {
+line-height: 30px;
+width: 60px;
+padding: 0 10px;
+background: #5cb85c;
+text-align: center;
+color: #fff;
+border:0;
+border-radius: 3px;
+CURSOR: pointer;
+
+}
+.btn_2k3 ~ input[type="button"]{
+	line-height: 30px;
+width: 60px;
+padding: 0 10px;
+background: #5cb85c;
+text-align: center;
+color: #fff;
+border:0;
+border-radius: 3px;
+CURSOR: pointer;
+}
+.btn_2k4 {
+PADDING-TOP: 2px;
+width: 140px;
+CURSOR: pointer;
+
+}
+
+.queueMoveIcon {
+background: url("../images/move.png") #fff no-repeat center center;
+height: 32px;
+width: 32px;
+}
+
+.a_button{
+	color:#14468f;
+	font-family: Verdana, Geneva, sans-serif; 
+	cursor: pointer;
+	text-decoration: underline; 
+}
+
+/*a  upload */
+.a-upload {
+	padding: 4px 10px;
+	height: 20px;
+	line-height: 20px;
+	position: relative;
+	cursor: pointer;
+	color: #888;
+	background: #fafafa;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	overflow: hidden;
+	display: inline-block;
+	*display: inline;
+	*zoom: 1
+}
+
+.a-upload input {
+	position: absolute;
+	font-size: 100px;
+	right: 0;
+	top: 0;
+	opacity: 0;
+	filter: alpha(opacity = 0);
+	cursor: pointer
+}
+
+.a-upload:hover {
+	color: #444;
+	background: #eee;
+	border-color: #ccc;
+	text-decoration: none
+}
+
+.readonly {
+	background-color: #DDDDDD;
+}
+
+.ChequeImage {
+	width: 1024px;
+	height: 768px;
+}
+
+
+.unAutotickets tr:nth-child(2n+2) {
+	background-color: #fffaea;
+}
+.unAutotickets tr:nth-child(2n+2) input {
+	background-color: #fffaea;
+}
+.downloadLink a {
+	color: blue;
+	text-decoration:none;
+}
+.downloadLink a:hover {
+	color: blue;
+	text-decoration:underline;
+}
+/*非自动化动态表中num、amount框样式*/
+.formatNum,.formatAmount{
+	text-align:right;
+}
+.formatNum{
+	width: 90px
+}
+.formatAmount{
+	width: 120px
+}
+/*鏌ヨ鏉′欢甯冨眬*/
+.actionBar{
+	width:100%;
+	border-collapse: collapse; 
+	border: none;
+}
+.actionBar td{
+	border:1px solid #ddd; 
+	padding-left: 5px !important;
+}
+
+.toOriginal{
+	text-decoration: underline !important;
+}
+/*鏂囧瓧鎹㈣*/
+.br{
+	word-break:break-all;
+}

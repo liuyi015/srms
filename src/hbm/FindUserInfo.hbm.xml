@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-3-23 15:07:31 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="cn.ly.srms.entity.FindUserInfo" table="finduserinfo" catalog="classbook">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="userName" type="string">
+            <column name="userName" length="20" not-null="true" />
+        </property>
+        <property name="address" type="string">
+            <column name="address" length="128" not-null="true" />
+        </property>
+        <property name="school" type="string">
+            <column name="school" length="80" not-null="true" />
+        </property>
+        <property name="publisher" type="int">
+            <column name="publisher" not-null="true" />
+        </property>
+        <property name="publishTime" type="string">
+            <column name="publishTime" length="19" />
+        </property>
+        <property name="message" type="string">
+            <column name="message" />
+        </property>
+         <property name="publisherName" type="string">
+            <column name="publisherName"  not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

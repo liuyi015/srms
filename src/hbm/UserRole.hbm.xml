@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+    
+<hibernate-mapping>
+	<class name="cn.ly.srms.entity.UserRole" table="user_role">
+		<composite-id>
+			<key-property name="userId"  type="java.lang.Integer">
+				<column name="USER_ID" length="20"></column>
+			</key-property>
+			<key-property name="roleId" type="java.lang.String">
+				<column name="ROLE_ID" length="20"></column>
+			</key-property>
+		</composite-id>
+	</class>
+</hibernate-mapping>

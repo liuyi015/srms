@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+    
+<hibernate-mapping>
+	<class name="cn.ly.srms.entity.User" table="user">
+		<id name="userId"  type="java.lang.Integer">
+			<column name="USER_ID" length="20"></column>
+			<generator class="native"/>
+		</id>
+		<property name="username"  type="java.lang.String"/>
+		<property name="password"  type="java.lang.String"/>
+		<property name="name"   type="java.lang.String"/>
+		<property name="email"  type="java.lang.String"/>
+		<property name="phone"  type="java.lang.String"/>
+		<property name="addr"  type="java.lang.String"/>
+		<property name="onlineState" type="java.lang.String"/>
+		<property name="sex"   type="java.lang.Integer"/>
+		<property name="school" type="java.lang.String"/>
+		<property name="className" type="java.lang.String"/>
+		<property name="image" type="java.lang.String"></property>
+	</class>
+</hibernate-mapping>

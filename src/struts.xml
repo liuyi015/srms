@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<!--打开开发者模式  -->
+	<constant name="struts.devMode" value="false"></constant>
+	
+	<!-- 加载资源文件 -->
+    <constant name="struts.custom.i18n.resources" value="ApplicationResources"></constant>
+	
+	<!--Struts2中Action对象的创建交给spring完成-->
+     <constant name="struts.objectFactory" value="spring" />
+     
+    <package name="default" extends="struts-default" namespace="/">
+    	<!-- 拦截器 -->
+    	<interceptors>
+    		<interceptor name="manaPower" class="cn.ly.srms.interceptor.PowerInterceptor"></interceptor>
+    	</interceptors>
+    	
+    	<!-- 全局变量-->
+    	<global-results>
+    		<result name="ok">/common/ok.jsp</result>
+    		<result name="error">/common/error.jsp</result>
+    	</global-results>
+    	
+    	<!-- 配置首页访问的Action  -->
+    	<action name="page_*" class="indexAction" method="{1}">
+    		<interceptor-ref name="manaPower"></interceptor-ref>
+    	 	<interceptor-ref name="defaultStack"></interceptor-ref>
+    		<result name="index">/common/index.jsp</result>
+    		<result name="home" type="redirectAction">find_toList</result>
+    		<result name="profile">/userInfo/profile.jsp</result>
+    		<result name="editProfile">/userInfo/editProfile.jsp</result>
+    		<result name="regist">/login/register.jsp</result>
+    		<result name="login">/login/login.jsp</result>
+    	</action>
+    
+    	 <!-- 配置用户模块的Action -->
+    	 <action name="user_*" class="userAction" method="{1}">
+    	 	<result name="login">/login/login.jsp</result>
+    	 	<result name="regist">/login/register.jsp</result>
+    	 	<result name="loginSuccess" type="redirectAction">page_index</result>
+    	 	<result name="exit">login/login.jsp</result>
+    	 	<result name="editprofile" >/userInfo/editProfile.jsp</result>
+    	 </action>
+    	 
+    	 <!-- 验证码Action -->
+    	<action name="random" class="randomAction">
+    		<result type="stream">
+    			<param name="contentType">image/jpeg</param>
+    			 <param name="inputName">inputStream</param>  
+    		</result>
+    	</action>
+    	
+    	 <!-- 配置寻人启示模块的Action -->
+    	 <action name="find_*" class="findAction" method="{1}">
+    	 	<result name="find">/find/find.jsp</result>
+    	 	<result name="success">/find/find.jsp</result>
+    	 	<result name="detail">/find/detail.jsp</result>
+    	 	<result name="add">/find/add.jsp</result>
+    	 	<result name="message">/find/message.jsp</result>
+    	 </action>
+    	 
+    	 <!-- 配置邮箱模块的Action -->
+    	 <action name="msg_*" class="messageAction" method="{1}">
+    	 	<result name="list">/mail/mail.jsp</result>
+    	 	<result name="success">/mail/mail.jsp</result>
+    	 	<result name="detail">/mail/detail.jsp</result>
+    	 	<result name="add">/find/add.jsp</result>
+    	 	<result name="message">/find/message.jsp</result>
+    	 </action>
+    	 
+    	 <!-- 配置用户信息的Action -->
+    	 <action name="profile_*" class="profileAction" method="{1}">
+    	 	
+    	 </action>
+    </package>
+
+</struts>
